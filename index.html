@@ -1,0 +1,185 @@
+<!doctype html>
+<!-- this is a small project to learn how forms work and different parts of forms and i will make a survey to show all this. i will include all different form controls for different questions in the survey.
+
+-i will use 1 or more of each:
+-text input
+-email input
+-text area
+-radio buttons
+-checkboxes
+-select boxes
+-selext boxes with multiple attribute
+-file input box
+
+-labels for each form control
+-html5 form validation
+
+-submit button
+
+-p.s this is a learning project so will be abit shit, and isnt made to look nice; no CSS. just pure html practise.-->
+
+<html lang="en">
+    
+    
+<head>
+    <title>MySurvey</title>
+    <meta charset="utf-8">
+    
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+    
+    
+<body>
+
+<!--START OF HEADER-->
+<header>
+    <div id="header">
+    <h1>Holiday Survey</h1>
+    </div>
+</header>
+    
+<!--INTRO-->
+<div class="intro">
+    <h2>Please fill out this short holiday survey so we can find you the best deals this year.</h2>
+    <h3>First, abit about you.</h3> 
+</div>
+    
+<form action="" method="get">
+    
+<!--USER DETAILS SECTION-->
+<div id="your details">
+   <fieldset>
+    <legend><b>Your Details</b></legend>
+       <div id="user details"><label>Name</label>
+       <input type="text" name="Name" placeholder="Name"><br>
+       <label>Age</label>
+       <input type="text" name="Age" placeholder="Age" maxlength="3"><br>
+       <label>Gender</label>
+       <input type="text" name="Gender" placeholder="Gender"><br>
+       <label>Email Address</label>
+       <input type="email" name="Email" placeholder="Email"><br>
+       <label>Telephone no:</label>
+       <input type="text" name="telephone no:" placeholder="Telephone no:" maxlength="11"><br><br> 
+       </div><!--END OF USER DETAILS-->
+       
+       <div id="date input">
+       <label for="Date">Date</label>
+       <input type="date">
+       </div><!--END OF DATE INPUT-->
+    </fieldset>
+</div><!--END OF USER DETAILS SECTION-->
+    
+<!--MAIN QUESTIONNAIRE-->
+<div id="main survey">
+    <fieldset>
+        <legend><h1>Main Survey</h1></legend>
+        <ol>
+        <div id="q1">
+        <li>When was your last holiday?<br>
+        <input type="radio" id="last 4 weeks" name="last holiday" value="last 4 weeks"/>
+        <label for="last 4 weeks">Last 4 weeks </label><br>    
+        <input type="radio" id="1-6 months" name="last holiday" value="1-6 months"/>
+        <label for="1-6 months">1-6 months</label><br>    
+        <input type="radio" id="6-12 months" name="last holiday" value="6-12 months"/>
+        <label for="6-12 months">6-12 months</label><br>
+        <input type="radio" id="12 months+" name="last holiday" value="12 months+"/>
+        <label for="12 months+">12 months+</label><br><br>
+        </li>
+        </div><!--END OF Q1-->
+        
+        <div id="q2">
+        <Li>Do you have any holidays booked currently?<br>
+        <input type="radio" id="yes" name="trip booked" value="yes"/>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="trip booked" value="no"/>
+        <label for="no">No</label><br><br>
+        </Li>
+        </div><!--END OF Q2-->
+        
+        <div id="q3">
+        <li>Do you prefer to go on holiday abroad or in the UK?<br>
+        <input type="radio" id="Abroad" name="destination" value="Abroad"/>
+        <label for="Abroad">Abroad</label>
+        <input type="radio" id="UK" name="destination" value="UK"/>
+        <label for="UK">UK</label><br><br>
+        </li>
+        </div><!--END OF Q3-->
+        
+        <div id="q4">
+        <li>What is your preferred way to book your holidays?<br>
+        <select name="booking preference" size="1" placeholer="select option">
+        <option value="package holiday websites">package holiday sites</option>
+        <option value="with travel agents">travel agents</option>
+        <option value="booking directly with hotels/places">booking directly with hotels/places</option>
+        <option value="me">me</option>
+        <option value="phoning travellers">phoning travellers</option>
+        <option value="yo mumma">yo mumma</option>  
+        </select><br><br>
+        </li>
+        </div><!--END OF Q4-->
+            
+        <div id="q5">
+        <li>What are your favourite types of holidays?<br>
+            Select all that apply.<br>
+        <input type="checkbox" id="sunny resort holiday" name="favourite holidays" value="sunny resort holiday">
+        <label for="sunny resort holiday">Sunny resort holiday</label> 
+        <input type="checkbox" id="winter sports holiday" name="favourite holidays" value="winter sports holiday">
+        <label for="winter sports holiday">Winter sports holiday</label>     
+        <input type="checkbox" id="sightseeing holiday" name="favourite holidays" value="sightseeing holiday">
+        <label for="sightseeing holiday">Sightseeing holiday</label>
+        <input type="checkbox" id="camping holiday" name="favourite holidays" value="camping holiday">
+        <label for="camping holiday">Camping holiday</label>    
+        <input type="checkbox" id="guided tour holiday" name="favourite holidays" value="guided tour holiday">
+        <label for="guided tour holiday">Guided tour holiday</label>  
+        <input type="checkbox" id="safari holiday" name="favourite holidays" value="safari holiday">
+        <label for="safari holiday">Safari holiday</label> 
+        <input type="checkbox" id="UK Staycations" name="favourite holidays" value="UK Staycations">
+        <label for="UK Staycations">UK Staycations</label>
+        <input type="checkbox" id="activity holiday" name="favourite holidays" value="activity holiday">
+        <label for="activity holiday">Activity holiday</label>
+        <input type="checkbox" id="Cruises" name="favourite holidays" value="Cruises">
+        <label for="Cruises">Cruises</label>
+        </li><br>
+        </div><!--END OF Q5-->
+        
+        <div id="q6">
+        <li>What is your preferred holiday length?<br>
+        <select name="holiday length" size="1">
+        <option value="1-2 nights">1-2 nights</option>
+        <option value="3-4 nights">3-4 nights</option>
+        <option value="5-7 nights">5-7 nights</option>
+        <option value="7+ nights">7+ nights</option>
+        </select>
+        </li>
+        </div><!--END OF Q6-->
+            
+        </ol>
+    </fieldset>
+</div>
+    
+<!--THANK YOU SECTION-->    
+<div id="thank you">
+    <fieldset>
+        <legend><h2>Thank you!</h2></legend>
+        <div id="closing text"><p>After you have completed the survey, please submit your answers using the submit button below, aswell as choosing your preferred contact methods. we appreciate you taking this time to fill out the boxes and we will be in contact soon with your best deals!</p>
+        </div><!--END OF CLOSING TEXT-->
+        
+        <div id="contact preference">
+        <p>How would you like to be contacted? select all that apply.</p>
+        <input type="checkbox" id="email" name="contact" value="Email">
+        <label for="email">Email</label>
+        <input type="checkbox" id="telephone" name="contact" value="telephone">
+        <label for="telephone">Telephone</label>
+        <input type="checkbox" id="sms" name="contact" value="sms">
+        <label for="sms">SMS</label><br><br>
+        </div><!--END OF CONTACT PREFERENCE FORM-->
+        
+        <div id="submit button">
+        <input type="submit" value="submit"></div>
+    </fieldset>
+</div>   
+</form>
+ 
+</body>
+</html>
